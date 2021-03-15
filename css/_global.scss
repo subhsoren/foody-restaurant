@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body.dark-theme {
+  $title-color: #f1f3f2;
+  $text-color: #c7d1cc;
+  $body-color: #1d2521;
+  $container-color: #27302c;
+}
+//Button Dark/Light
+.change-theme {
+  position: absolute;
+  right: 1rem;
+  top: 1.8rem;
+  color: $text-color;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+body {
+  margin: $header-height 0 0 0;
+  font-size: $normal-font-size;
+  background-color: $body-color;
+  color: $text-color;
+  line-height: 1.6;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.section {
+  padding: 4rem 0 2rem;
+}
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+.section-title {
+  font-size: $h1-font-size;
+  color: $title-color;
+  margin-bottom: $mb-3;
+}
+.section-subtitle {
+  display: block;
+  color: $primary-color;
+  font-weight: $font-medium;
+  margin-bottom: $mb-1;
+}
+.bd-container {
+  max-width: 960px;
+  width: calc(100% - 2rem);
+  margin-left: $mb-2;
+  margin-right: $mb-2;
+}
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
